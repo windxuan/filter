@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#choose {
+	margin: 20px;
+	width: 55%;
+	height: 415px;
+	/*border: 3px solid #E6A23C;*/
+	border-radius: 5px;
+	position: absolute;
+	left: 20%;
+	font-family: "Microsoft YaHei";
+}
+#choose p{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #F56C6C;
+}
+#type {
+	padding: 10px 25px;
+	width: 90%;
+	height: 200px;
+	border: 1px solid #F56C6C;
+	border-style: dashed;
+	border-radius: 10px;
+	position: relative;
+	top: 25px;
+	left: 5%;
+}
+#type li{
+	list-style: none;
+	height: 40px;
+	border-bottom: 1px solid #409EFF;
+	border-bottom-style: dashed;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+}
+#type li a{
+	width: 20px;
+	margin: 10px;
+	padding: 3px 2px;
+	margin-left: 8px;
+	border: 1px solid #E6A23C;
+	border-radius: 15px;
+	font-size: 14px;
+	font-weight: normal;
+	background: #eee;
+}
+#type li a:hover{
+	background: rgba(255,0,75,0.35);
+	cursor: pointer;
+}
+#choose>.choose_txt{
+	padding: 0 20px;
+	width: 90%;
+	height: 45px;
+	border: 1px solid #67C23A;
+	position: relative;
+	left: 5%;
+	line-height: 45px;
+	border-radius: 15px;
+}
+#choose>.choose_txt>span{
+	margin-left: 10px;
+	padding: 3px 4px;
+	border-radius: 5px;
+	font-size: 16px;
+	background: rgb(236,245,255);
+}
+#choose>.choose_txt>span>a:hover {
+	cursor: pointer;
+}
+.refer {
+	width: 100px;
+	height: 30px;
+	background: rgb(236,245,255);
+	border: 1px solid #B3D8FF;
+	font-size: 15px;
+	border-radius: 15px;
+	color: #666;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	top: 35px;
+	left: 80%;
+}
+.refer:hover {
+	background: #409EFF;
+	cursor: pointer;
+}
