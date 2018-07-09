@@ -4,10 +4,11 @@
 	box-sizing: border-box;
 }
 #choose {
+	padding: 35px 2px;
 	margin: 20px;
 	width: 55%;
-	height: 415px;
-	/*border: 3px solid #E6A23C;*/
+	height: 425px;
+	border: 3px solid #E6A23C;
 	border-radius: 5px;
 	position: absolute;
 	left: 20%;

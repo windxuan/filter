@@ -42,7 +42,7 @@ window.onload = function(){
 	var scoreArr = {
 		brand: null,
 		place: null,
-		prcie: null
+		price: null
 	};
 	//用来存放筛选条件
 	var arr = [];
@@ -79,7 +79,6 @@ window.onload = function(){
 
 			// 添加选中元素
 			arr[parent.index] = this.innerText;
-			// 文本清空，同一个li内仅留下一个
 
 			// 匹配对应值
 			if (parent.index == 0) {
@@ -89,12 +88,12 @@ window.onload = function(){
 				scoreArr.place = arr[parent.index]
 			}
 			if (parent.index == 2) {
-				scoreArr.prcie = arr[parent.index]
+				scoreArr.price = arr[parent.index]
 			}
-			console.log(parent.index);
 			console.log(scoreArr);
 			console.log(arr[parent.index]);
 
+			// 文本清空，同一个li内仅留下一个
 			oChosDiv.innerHTML = '';
 
 			for(var i=0; i<arr.length; i++){
@@ -133,8 +132,22 @@ window.onload = function(){
 			}
 		}
 
-		// from表单提交数据
-		function referFrom(){
+		// from表单
+        $('.refer').on('click', function() {
+          const referArr = ['brand', 'place', 'price'];
+          var form = $("<form method='get' active='#'></form>");
+          console.log(scoreArr);
+          [scoreArr.brand, scoreArr.place, scoreArr.price].forEach(function(item, i) {
+              form.append($("<input type='hidden' name=" + referArr[i] + " value=" + item + ">"))
+          })
 
-		}
+          $(document.body).append(form);
+          form.submit();
+        });
 	}
+
+// var scoreArr = {
+// 	brand: [a],
+// 	place: [b],
+// 	price: [c]
+// };
